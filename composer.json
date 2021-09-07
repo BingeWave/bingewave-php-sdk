@@ -1,0 +1,28 @@
+{
+    "name": "bingewave/bingewave-php-sdk",
+    "description": "The SDK in PHP for interfacing with BingeWaves API",
+    "type": "sdk",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bingewave\\BingewavePhpSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Devin Dixon",
+            "email": "development@bingewave.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "psr/http-factory": "^1.0",
+        "psr/http-client": "^1.0",
+        "php-http/client-common": "^2.4"
+    },
+    "require-dev": {
+        "php-http/curl-client": "^2.2",
+        "laminas/laminas-diactoros": "^2.6",
+        "php-http/mock-client": "^1.5"
+    }
+}
