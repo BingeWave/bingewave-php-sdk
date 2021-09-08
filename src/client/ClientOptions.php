@@ -35,7 +35,6 @@ final class ClientOptions
     public function getUri(): UriInterface
     {
         return $this->getUriFactory()->createUri($this->options['uri']);
-
     }
 
     private function configureOptions(OptionsResolver $resolver): void

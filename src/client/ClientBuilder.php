@@ -21,7 +21,6 @@ final class ClientBuilder
     private $_httpClient;
     private $_requestFactoryInterface;
     private $_streamFactoryInterface;
-
     private $plugins = [];
 
     public function __construct(
