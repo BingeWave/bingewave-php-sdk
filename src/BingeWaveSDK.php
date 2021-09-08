@@ -6,6 +6,7 @@ use Bingewave\BingewavePhpSdk\Client\ClientBuilder;
 use Bingewave\BingewavePhpSdk\Client\ClientOptions;
 use Bingewave\BingewavePhpSdk\Endpoints\Auth;
 use Bingewave\BingewavePhpSdk\Endpoints\Events;
+use Bingewave\BingewavePhpSdk\Endpoints\Products;
 use Bingewave\BingewavePhpSdk\Response\JSONResponse;
 use Http\Client\Common\HttpMethodsClientInterface;
 use Http\Client\Common\Plugin\BaseUriPlugin;
@@ -56,5 +57,10 @@ final class BingeWaveSDK
     public function events(): Events
     {
         return new Events($this);
+    }
+
+    public function prooducts(): Products
+    {
+        return new Products($this);
     }
 }
