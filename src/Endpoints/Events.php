@@ -16,7 +16,7 @@ final class Events extends BaseEndpoint
     public function list(array $params = [], array $headers = [])
     {
 
-        $url = $this->addParameters('events', $params);
+        $url = $this->addParameters('/events', $params);
 
         return $this->processResponse($this->sdk->getHttpClient()->get($url, $headers));
     }
@@ -24,7 +24,7 @@ final class Events extends BaseEndpoint
     public function retrieve(string $id, array $params = [], array $headers = [])
     {
 
-        $url = $this->addParameters('events/' . $id, $params);
+        $url = $this->addParameters('/events/' . $id, $params);
         
         return $this->processResponse($this->sdk->getHttpClient()->get($url, $headers));
     }

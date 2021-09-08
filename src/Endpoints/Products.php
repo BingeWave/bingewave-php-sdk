@@ -16,7 +16,7 @@ final class Products extends BaseEndpoint
     public function list(array $params = [], array $headers = [])
     {
 
-        $url = $this->addParameters('products', $params);
+        $url = $this->addParameters('/products', $params);
 
         return $this->processResponse($this->sdk->getHttpClient()->get($url, $headers));
     }
@@ -24,7 +24,7 @@ final class Products extends BaseEndpoint
     public function retrieve(string $id, array $params = [], array $headers = [])
     {
 
-        $url = $this->addParameters('products/' . $id, $params);
+        $url = $this->addParameters('/products/' . $id, $params);
         
         return $this->processResponse($this->sdk->getHttpClient()->get($url, $headers));
     }
