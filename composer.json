@@ -20,10 +20,12 @@
         "psr/http-client": "^1.0",
         "php-http/client-common": "^2.4",
         "php-http/discovery": "^1.14",
-        "php-http/httplug": "^2.2"
+        "php-http/httplug": "^2.2",
+        "php-http/curl-client": "^2.2",
+        "guzzlehttp/psr7": "^2.0",
+        "php-http/message": "^1.12"
     },
     "require-dev": {
-        "php-http/curl-client": "^2.2",
         "laminas/laminas-diactoros": "^2.6",
         "php-http/mock-client": "^1.5"
     }
