@@ -6,7 +6,7 @@ use Bingewave\BingewavePhpSdk\BingeWaveSDK;
 
 final class Auth extends BaseEndpoint
 {
-    private $sdk;
+    protected $sdk;
 
     public function __construct(BingeWaveSDK $sdk)
     {
